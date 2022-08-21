@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid rgb(219 219 219);
+            margin-top: 10px;
+        }
+
+        input:focus,
+        input:active {
+            border: 1px solid rgba(38, 38, 38, 0.4);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center
+        }
+
+        .left {
+            height: 700px;
+            width: 430px;
+            background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
+            background-repeat: no-repeat;
+            /* transform: scale(0.9); */
+            margin-right:10px;
+            margin-top:10px;
+
+        }
+       
+        .right{
+           margin-top:-50px;
+        }
+        .inside-right {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            width: 350px;
+            background-color: white;
+            border: 1px solid rgb(216, 216, 216);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            margin: 20px;
+
+        }
+
+        .btn {
+            background-color: rgba(0, 149, 246, 0.3);
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            border: none;
+        }
+
+        .or-part {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .line {
+            background-color: rgb(219, 219, 219);
+            width: 150px;
+            height: 1px;
+        }
+
+        .or {
+            font-size: 600;
+            color: gray;
+            padding: 0px 20px 0px 20px;
+        }
+
+        .other_log {
+
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(56, 81, 133);
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .face-book {
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            top: 3px;
+            background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png');
+            background-repeat: no-repeat;
+            background-position: -414px -259px;
+            height: 16px;
+            width: 16px;
+            top:1px;
+
+        }
+        .forgot-pass{
+            color:rgb(0,55,107);
+            text-align: center;
+            padding:20px;
+            font-weight:100;
+            font-size:12px;
+        }
+        .signup{
+            background-color: white;
+            border:1px solid rgb(219,219,219);
+            text-align:center;
+            padding:15px;
+            margin:20px;
+
+
+        }
+        .span-div{
+            color:rgba(0,149,246,1);
+        }
+        .get-app{
+            text-align: center;
+        }
+        .apps{
+            text-align: center;
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#fafafafa ; height:100vh; margin:0px">
+    <div class="main">
+        <div class="left">
+            <img src="photo.png" style="position:relative;top: 28px ; left:155px" />
+
+        </div>
+        <div class="right">
+            <div class="inside-right">
+                <img src="logo.png " style="padding: 0 70px 30px 70px">
+                <input type="text" placeholder="Phone number or username or email">
+                <input type="password" placeholder="Password">
+                <div class="btn">Log In</div>
+                <div class="or-part">
+                    <div class="line"></div>
+                    <div class="or">OR</div>
+                    <div class="line"></div>
+                </div>
+                <div class="other_log">
+                    <span class="face-book"></span>
+                    <span>Log in with facebook</span>
+                </div>
+                <div class="forgot-pass">
+                    Forgot password?
+                </div>
+
+            </div>
+
+        <div class="signup">
+            Don't have an account?
+        <span class="span-div">
+            Sign up
+        </span>
+        </div>
+        <div class="get-app">Get the app.</div>
+         <div class="apps">
+            <img src="appStroe.png" width="150px">
+            <img src="playStore.png" width="150px">
+         </div>
+        </div>
+      
+    </div>
+
+</body>
+
+</html>
